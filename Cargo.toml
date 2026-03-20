@@ -1,6 +1,8 @@
 [workspace]
 
 members = [
-    "server",
+    "tempura",
+    "tempura-messages",
+    "tempura-server",
 ]
 resolver = "2"

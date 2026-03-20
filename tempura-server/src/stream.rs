@@ -9,7 +9,7 @@ pub async fn listen(socket: TcpStream) -> io::Result<()> {
     let mut reader = BufReader::new(reader);
     let mut line = String::new();
 
-    writer.write_all(b"220 localhost ESMTP fake-server\r\n").await?;
+    writer.write_all(b"220 localhost ESMTP fake-tempura-server\r\n").await?;
 
     let mut data_mode = false;
     let mut email_data = String::new();
