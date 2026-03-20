@@ -1,9 +1,6 @@
-[package]
-name = "tempura"
-version = "0.0.1"
-edition = "2024"
+[workspace]
 
-[dependencies]
-tokio = { version = "1", features = ["net", "macros", "rt-multi-thread", "io-util"] }
-pico-args = "0.5.0"
-thiserror = "2.0.18"
+members = [
+    "server",
+]
+resolver = "2"
